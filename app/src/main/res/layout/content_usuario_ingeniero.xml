@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.jdcasas.appciviltopia.UsuarioIngeniero"
+    tools:showIn="@layout/activity_usuario_ingeniero"
+   >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/horizontalScrollView2" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_bienvenido"
+                            android:text=""
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/rounded_corners_azul"
+                            android:gravity="center_horizontal"
+                            android:layout_marginBottom="5dp" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.4">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Nombre"
+                                    android:textSize="@dimen/formularioletra"
+                                    android:id="@+id/textViewNombre"
+                                    android:background="@drawable/rounded_corners_textview"
+                                    android:visibility="gone"
+                                    android:layout_marginBottom="@dimen/espacio_textview" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="C.I.P."
+                                    android:textSize="@dimen/formularioletra"
+                                    android:id="@+id/textViewCip"
+                                    android:background="@drawable/rounded_corners_textview"
+                                    android:layout_marginBottom="@dimen/espacio_textview"
+                                    android:visibility="gone"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Fecha Cat."
+                                    android:textSize="@dimen/formularioletra"
+                                    android:id="@+id/textViewFechaCat"
+                                    android:background="@drawable/rounded_corners_textview"
+                                    android:layout_marginBottom="@dimen/espacio_textview"
+                                    android:visibility="gone"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Universidad"
+                                    android:textSize="@dimen/formularioletra"
+                                    android:id="@+id/textViewUniversidad"
+                                    android:background="@drawable/rounded_corners_textview"
+                                    android:layout_marginBottom="@dimen/espacio_textview"
+                                    android:visibility="gone"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="D.N.I."
+                                    android:textSize="@dimen/formularioletra"
+                                    android:id="@+id/textViewDNI"
+                                    android:background="@drawable/rounded_corners_textview"
+                                    android:layout_marginBottom="@dimen/espacio_textview"
+                                    android:visibility="gone"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Estado"
+                                    android:textSize="@dimen/formularioletra"
+                                    android:id="@+id/textViewEstadoIngeniero"
+                                    android:background="@drawable/rounded_corners_textview"
+                                    android:layout_marginBottom="@dimen/espacio_textview"
+                                    android:visibility="gone"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Categoria"
+                                    android:textSize="@dimen/formularioletra"
+                                    android:id="@+id/textViewCategoria"
+                                    android:background="@drawable/rounded_corners_textview"
+                                    android:layout_marginBottom="@dimen/espacio_textview"
+                                    android:visibility="gone"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Usuario"
+                                    android:textSize="@dimen/formularioletra"
+                                    android:id="@+id/tw_usuario"
+                                    android:background="@drawable/rounded_corners_textview"
+                                    android:layout_marginBottom="@dimen/espacio_textview"
+                                    android:visibility="gone"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Departamento"
+                                    android:textSize="@dimen/formularioletra"
+                                    android:id="@+id/tw_departamento"
+                                    android:visibility="gone"
+                                    android:background="@drawable/rounded_corners_textview"
+                                    android:layout_marginBottom="@dimen/espacio_textview"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Provincia"
+                                    android:textSize="@dimen/formularioletra"
+                                    android:id="@+id/tw_provincia"
+                                    android:background="@drawable/rounded_corners_textview"
+                                    android:layout_marginBottom="@dimen/espacio_textview"
+                                    android:visibility="gone"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Receptor"
+                                    android:textSize="@dimen/formularioletra"
+                                    android:id="@+id/tw_receptor"
+                                    android:background="@drawable/rounded_corners_textview"
+                                    android:layout_marginBottom="@dimen/espacio_textview"
+                                    android:visibility="gone"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Especialidad"
+                                    android:textSize="@dimen/formularioletra"
+                                    android:id="@+id/tw_especialidad"
+                                    android:background="@drawable/rounded_corners_textview"
+                                    android:layout_marginBottom="@dimen/espacio_textview"
+                                    android:visibility="gone"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.6">
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_nombre"
+                                    android:text=""
+                                    android:textSize="@dimen/formularioletra"
+                                    android:layout_marginLeft="10dp"
+                                    android:visibility="gone"
+                                    android:editable="false" />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_cip"
+                                    android:text=""
+                                    android:textSize="@dimen/formularioletra"
+                                    android:layout_marginLeft="10dp"
+                                    android:visibility="gone"
+                                    android:editable="false" />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_fechac"
+                                    android:text=""
+                                    android:textSize="@dimen/formularioletra"
+                                    android:layout_marginLeft="10dp"
+                                    android:visibility="gone"
+                                    android:editable="false" />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_uni"
+                                    android:text=""
+                                    android:textSize="@dimen/formularioletra"
+                                    android:layout_marginLeft="10dp"
+                                    android:visibility="gone"
+                                    android:editable="false" />
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_dni"
+                                    android:text=""
+                                    android:textSize="@dimen/formularioletra"
+                                    android:layout_marginLeft="10dp"
+                                    android:visibility="gone"
+                                    android:editable="false" />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_estadoIngeniero"
+                                    android:text=""
+                                    android:textSize="@dimen/formularioletra"
+                                    android:layout_marginLeft="10dp"
+                                    android:visibility="gone"
+                                    android:editable="false" />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_categoria"
+                                    android:text=""
+                                    android:textSize="@dimen/formularioletra"
+                                    android:layout_marginLeft="10dp"
+                                    android:visibility="gone"
+                                    android:editable="false" />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_usuario"
+                                    android:text=""
+                                    android:textSize="@dimen/formularioletra"
+                                    android:layout_marginLeft="10dp"
+                                    android:visibility="gone"
+                                    android:editable="false" />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_departamento"
+                                    android:text=""
+                                    android:textSize="@dimen/formularioletra"
+                                    android:layout_marginLeft="10dp"
+                                    android:visibility="gone"
+                                    android:editable="false" />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_provincia"
+                                    android:text=""
+                                    android:textSize="@dimen/formularioletra"
+                                    android:layout_marginLeft="10dp"
+                                    android:visibility="gone"
+                                    android:editable="false" />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_receptor"
+                                    android:text=""
+                                    android:textSize="@dimen/formularioletra"
+                                    android:layout_marginLeft="10dp"
+                                    android:visibility="gone"
+                                    android:editable="false" />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_especialidad"
+                                    android:text=""
+                                    android:textSize="@dimen/formularioletra"
+                                    android:layout_marginLeft="10dp"
+                                    android:visibility="gone"
+                                    android:editable="false" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/TextViewDatosActualizar"
+                            android:text="Estos datos son actualizables"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/rounded_corners_azul"
+                            android:gravity="center_horizontal"
+                            android:layout_marginBottom="5dp" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.4">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Disponibilidad"
+                                    android:textSize="@dimen/formularioletra"
+                                    android:id="@+id/textViewDisponibilidad"
+                                    android:background="@drawable/rounded_corners_textview"
+                                    android:visibility="gone"
+                                    android:layout_marginBottom="@dimen/espacio_textview"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Celular"
+                                    android:textSize="@dimen/formularioletra"
+                                    android:id="@+id/textViewCelular"
+                                    android:background="@drawable/rounded_corners_textview"
+                                    android:visibility="gone"
+                                    android:layout_marginBottom="@dimen/espacio_textview"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Email"
+                                    android:textSize="@dimen/formularioletra"
+                                    android:id="@+id/textViewEmail"
+                                    android:background="@drawable/rounded_corners_textview"
+                                    android:visibility="gone"
+                                    android:layout_marginBottom="@dimen/espacio_textview"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Latitud"
+                                    android:textSize="@dimen/formularioletra"
+                                    android:id="@+id/textViewCoory"
+                                    android:background="@drawable/rounded_corners_textview"
+                                    android:layout_marginBottom="@dimen/espacio_textview"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Longitud"
+                                    android:textSize="@dimen/formularioletra"
+                                    android:id="@+id/textViewCoorx"
+                                    android:background="@drawable/rounded_corners_textview"
+                                    android:layout_marginBottom="@dimen/espacio_textview"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:text="Link C.V."
+                                    android:textSize="@dimen/formularioletra"
+                                    android:id="@+id/textViewlinkcv"
+                                    android:background="@drawable/rounded_corners_textview"
+                                    android:visibility="gone"
+                                    android:layout_marginBottom="@dimen/espacio_textview"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.6">
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_disponibilidad"
+                                    android:text=""
+                                    android:textSize="@dimen/formularioletra"
+                                    android:layout_marginLeft="10dp"
+                                    android:visibility="gone"
+                                    android:editable="false" />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_celular"
+                                    android:text=""
+                                    android:textSize="@dimen/formularioletra"
+                                    android:layout_marginLeft="10dp"
+                                    android:visibility="gone"
+                                    android:editable="false"
+                                   />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_email"
+                                    android:text=""
+                                    android:textSize="@dimen/formularioletra"
+                                    android:layout_marginLeft="10dp"
+                                    android:visibility="gone"
+                                    android:editable="false"
+                                     />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_coorx"
+                                    android:text=""
+                                    android:textSize="@dimen/formularioletra"
+                                    android:layout_marginLeft="10dp"
+                                    android:editable="false" />
+                                />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_coory"
+                                    android:text=""
+                                    android:textSize="@dimen/formularioletra"
+                                    android:layout_marginLeft="10dp"
+                                    android:editable="false" />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/et_linkcv"
+                                    android:text=""
+                                    android:textSize="@dimen/formularioletra"
+                                    android:layout_marginLeft="10dp"
+                                    android:visibility="gone"
+                                    android:editable="false" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Cambiar"
+                            android:id="@+id/botonCambiarDatosActualizados"
+                            android:layout_marginTop="5dp"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            android:theme="@style/MyButton"
+                            android:gravity="center|center_horizontal"
+                            android:layout_gravity="center_horizontal"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/horizontalScrollViewTodos"
+                android:background="@color/bgcolor">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:background="@color/bgcolor">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imabtnListaDistritos"
+                            android:src="@drawable/btn_lista_distritos"
+                            android:theme="@style/ImaButton"
+                            android:background="#ffffff" />
+                        <TextView
+                            android:id="@+id/tw_lista"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:textColor="#121111"
+                            android:gravity="center"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="Lista"
+                            android:layout_gravity="center_horizontal">
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imabtnReceptores"
+                            android:src="@drawable/btn_receptores"
+                            android:theme="@style/ImaButton"
+                            android:background="#ffffff" />
+                        <TextView
+                            android:id="@+id/twcp_receptor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:textColor="#121111"
+                            android:gravity="center"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="Receptores"
+                            android:layout_gravity="center_horizontal">
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imgbtnBuscarIngenieros"
+                            android:src="@drawable/btn_ingenieros"
+                            android:theme="@style/ImaButton"
+                            android:background="#ffffff" />
+                        <TextView
+                            android:id="@+id/TextViewRegistrarse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:textColor="#121111"
+                            android:gravity="center"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="Ingenieros"
+                            android:layout_gravity="center_horizontal">
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imgbtnBuscarAcercaDe"
+                            android:src="@drawable/btn_acerca"
+                            android:theme="@style/ImaButton"
+                            android:baselineAlignBottom="true"
+                            android:background="#ffffff" />
+                        <TextView
+                            android:id="@+id/TextViewM7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:textColor="#121111"
+                            android:gravity="center"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="Acerca de"
+                            android:layout_gravity="center_horizontal">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/horizontalScrollView"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:background="#ffffff">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imgbtnReceptoresCercaTi"
+                            android:src="@drawable/gps2"
+                            android:theme="@style/ImaButton"
+                            android:background="#ffffff"
+                            android:visibility="gone" />
+                        <TextView
+                            android:id="@+id/tw_GPSReceptores"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:textColor="#121111"
+                            android:gravity="center"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="G.P.S. Receptores"
+                            android:visibility="gone"
+                            android:layout_gravity="center_horizontal">
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imgbtnBuscarIngenierosGPS"
+                            android:src="@drawable/buscaringenierosgps"
+                            android:theme="@style/ImaButton"
+                            android:background="#ffffff"
+                            android:visibility="gone" />
+                        <TextView
+                            android:id="@+id/tw_BuscarIngenierosGPS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:textColor="#121111"
+                            android:gravity="center"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="G.P.S.\n Ingenieros"
+                            android:visibility="gone"
+                            android:layout_gravity="center_horizontal">
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imgbtnBuscarProyectos"
+                            android:src="@drawable/buscarproyectos"
+                            android:theme="@style/ImaButton"
+                            android:background="#ffffff"
+                            android:visibility="gone" />
+                        <TextView
+                            android:id="@+id/tw_BuscarProyectos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:textColor="#121111"
+                            android:gravity="center"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="Buscar \nProyectos"
+                            android:visibility="gone"
+                            android:layout_gravity="center_horizontal">
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imgbtnAgregarProyectos"
+                            android:src="@drawable/agregarproyecto"
+                            android:theme="@style/ImaButton"
+                            android:background="#ffffff"
+                            android:visibility="gone" />
+                        <TextView
+                            android:id="@+id/tw_AgregarProyectos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:textColor="#121111"
+                            android:gravity="center"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="Agregar\n Proyectos"
+                            android:visibility="gone"
+                            android:layout_gravity="center_horizontal">
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff">
+
+                        <ImageButton
+                            android:id="@+id/imgbtnlinkcv"
+                            android:src="@drawable/linkcv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/ImaButton"
+                            android:visibility="gone"
+                            android:background="#ffffff" />
+                        <TextView
+                            android:id="@+id/twcp_linkcv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:textColor="#121111"
+                            android:gravity="center"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="C.V."
+                            android:visibility="gone"
+                            android:layout_gravity="center_horizontal">
+                        </TextView>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imabtnGeoReceptores"
+                            android:src="@drawable/btn_geo_receptores"
+                            android:theme="@style/ImaButton"
+                            android:visibility="gone"
+                            android:background="#ffffff" />
+                        <TextView
+                            android:id="@+id/tw_georeceptor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:textColor="#121111"
+                            android:gravity="center"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="Geo Receptor"
+                            android:visibility="gone"
+                            android:layout_gravity="center_horizontal">
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imgbtnGeoIngenieros"
+                            android:src="@drawable/btn_geo_ingenieros"
+                            android:theme="@style/ImaButton"
+                            android:visibility="gone"
+                            android:background="#ffffff" />
+                        <TextView
+                            android:id="@+id/tw_GeoIngenieros"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:textColor="#121111"
+                            android:gravity="center"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="Geo Ingenieros"
+                            android:visibility="gone"
+                            android:layout_gravity="center_horizontal">
+                        </TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/TextViewCambiarPassword"
+                        android:text="@string/cambiar_password"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/rounded_corners_azul"
+                        android:gravity="center_horizontal"
+                        android:layout_marginBottom="5dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Anterior"
+                                android:textSize="@dimen/formularioletra"
+                                android:id="@+id/textViewPasswordAnterior"
+                                android:background="@drawable/rounded_corners_textview"
+                                android:layout_marginBottom="@dimen/espacio_textview"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Nuevo"
+                                android:textSize="@dimen/formularioletra"
+                                android:id="@+id/textViewPasswordNuevo"
+                                android:background="@drawable/rounded_corners_textview"
+                                android:layout_marginBottom="@dimen/espacio_textview"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="De nuevo"
+                                android:textSize="@dimen/formularioletra"
+                                android:id="@+id/textViewPasswordDeNuevo"
+                                android:background="@drawable/rounded_corners_textview"
+                                android:layout_marginBottom="@dimen/espacio_textview"/>
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cambiar"
+                                android:id="@+id/botonPasswordCambiar"
+                                android:layout_marginTop="5dp"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                android:theme="@style/MyButton"
+                                android:gravity="center|center_horizontal"
+                                android:layout_gravity="center_horizontal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/et_password_anterior"
+                                android:text=""
+                                android:textSize="@dimen/formularioletra"
+                                android:layout_marginLeft="10dp"
+                                />
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/et_password_nuevo"
+                                android:text=""
+                                android:textSize="@dimen/formularioletra"
+                                android:layout_marginLeft="10dp"
+                                />
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/et_password_de_nuevo"
+                                android:text=""
+                                android:textSize="@dimen/formularioletra"
+                                android:layout_marginLeft="10dp"
+                                />
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Actualizar"
+                                android:id="@+id/botonPasswordActualizar"
+                                android:layout_marginTop="5dp"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                android:theme="@style/MyButton"
+                                android:gravity="center|center_horizontal"
+                                android:layout_gravity="center_horizontal" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                  >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/TextViewActualizarGPS"
+                        android:text="Actualizar GPS"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/rounded_corners_azul"
+                        android:gravity="center_horizontal"
+                        android:layout_marginBottom="5dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                       >
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Longitud"
+                                android:textSize="@dimen/formularioletra"
+                                android:id="@+id/textViewLongitud"
+                                android:background="@drawable/rounded_corners_textview"
+                                android:layout_marginBottom="@dimen/espacio_textview"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Latitud"
+                                android:textSize="@dimen/formularioletra"
+                                android:id="@+id/textViewLatitud"
+                                android:background="@drawable/rounded_corners_textview"
+                                android:layout_marginBottom="@dimen/espacio_textview"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Precision"
+                                android:textSize="@dimen/formularioletra"
+                                android:id="@+id/textViewPrecision"
+                                android:background="@drawable/rounded_corners_textview"
+                                android:layout_marginBottom="@dimen/espacio_textview"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Estado"
+                                android:textSize="@dimen/formularioletra"
+                                android:id="@+id/textViewEstado"
+                                android:background="@drawable/rounded_corners_textview"
+                                android:layout_marginBottom="@dimen/espacio_textview"/>
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Activar"
+                                android:id="@+id/botonActivarGPS"
+                                android:layout_marginTop="5dp"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                android:theme="@style/MyButton"
+                                android:gravity="center|center_horizontal"
+                                android:layout_gravity="center_horizontal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6">
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/et_longitud"
+                                android:text=""
+                                android:textSize="@dimen/formularioletra"
+                                android:editable="false"
+                                android:layout_marginLeft="10dp"
+                                />
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/et_latitud"
+                                android:text=""
+                                android:textSize="@dimen/formularioletra"
+                                android:editable="false"
+                                android:layout_marginLeft="10dp"
+                                />
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/et_precision"
+                                android:text=""
+                                android:textSize="@dimen/formularioletra"
+                                android:editable="false"
+                                android:layout_marginLeft="10dp"
+                                />
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/et_estado"
+                                android:text=""
+                                android:textSize="@dimen/formularioletra"
+                                android:editable="false"
+                                android:layout_marginLeft="10dp"
+                                />
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Actualizar"
+                                android:id="@+id/btnCambiarCoordenadasGPS"
+                                android:layout_marginTop="5dp"
+                                android:textSize="10dp"
+                                android:textStyle="bold"
+                                android:theme="@style/MyButton"
+                                android:gravity="center"
+                                android:layout_gravity="center_horizontal" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

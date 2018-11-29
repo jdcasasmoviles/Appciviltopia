@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.jdcasas.appciviltopia.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@color/bgcolor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/bgcolor"
+        android:layout_alignParentTop="true">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView7" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/scrollView"
+                    android:background="@color/bgcolor">
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/horizontalScrollView"
+                        android:background="@color/bgcolor">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:background="@color/bgcolor">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#ffffff">
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/imageButton2"
+                                    android:src="@drawable/btn_login"
+                                    android:theme="@style/ImaButton"
+                                    android:background="#ffffff" />
+                                <TextView
+                                    android:id="@+id/TextViewM1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:textColor="#121111"
+                                    android:gravity="center"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:text="Login"
+                                    android:layout_gravity="center_horizontal">
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#ffffff">
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/imabtnRegistrarse"
+                                    android:src="@drawable/registrarse"
+                                    android:theme="@style/ImaButton"
+                                    android:background="#ffffff" />
+                                <TextView
+                                    android:id="@+id/TextViewRegistrarse"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:textColor="#121111"
+                                    android:gravity="center"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:text="REGISTRARSE"
+                                    android:layout_gravity="center_horizontal">
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#ffffff">
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/imageButton4"
+                                    android:src="@drawable/btn_lista_distritos"
+                                    android:theme="@style/ImaButton"
+                                    android:background="#ffffff" />
+                                <TextView
+                                    android:id="@+id/TextViewM2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:textColor="#121111"
+                                    android:gravity="center"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:text="Lista"
+                                    android:layout_gravity="center_horizontal">
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#ffffff">
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/imageButton"
+                                    android:src="@drawable/btn_receptores"
+                                    android:theme="@style/ImaButton"
+                                    android:background="#ffffff" />
+                                <TextView
+                                    android:id="@+id/TextViewM3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:textColor="#121111"
+                                    android:gravity="center"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:text="Receptor"
+                                    android:layout_gravity="center_horizontal">
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#ffffff">
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/imageButton3"
+                                    android:src="@drawable/btn_geo_receptores"
+                                    android:theme="@style/ImaButton"
+                                    android:background="#ffffff" />
+                                <TextView
+                                    android:id="@+id/TextViewM4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:textColor="#121111"
+                                    android:gravity="center"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:text="Geo Receptor"
+                                    android:layout_gravity="center_horizontal">
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#ffffff">
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/imageButton5"
+                                    android:src="@drawable/btn_ingenieros"
+                                    android:theme="@style/ImaButton"
+                                    android:background="#ffffff" />
+                                <TextView
+                                    android:id="@+id/TextViewM5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:textColor="#121111"
+                                    android:gravity="center"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:text="Ingenieros"
+                                    android:layout_gravity="center_horizontal">
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#ffffff">
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/imageButton6"
+                                    android:src="@drawable/btn_geo_ingenieros"
+                                    android:theme="@style/ImaButton"
+                                    android:background="#ffffff" />
+                                <TextView
+                                    android:id="@+id/TextViewM6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:textColor="#121111"
+                                    android:gravity="center"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:text="Geo Ingenieros"
+                                    android:layout_gravity="center_horizontal">
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#ffffff">
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/imageButton7"
+                                    android:src="@drawable/btn_acerca"
+                                    android:theme="@style/ImaButton"
+                                    android:baselineAlignBottom="true"
+                                    android:background="#ffffff" />
+                                <TextView
+                                    android:id="@+id/TextViewM7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:textColor="#121111"
+                                    android:gravity="center"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold"
+                                    android:text="Acerca de"
+                                    android:layout_gravity="center_horizontal">
+                                </TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </ScrollView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Webs y redes sociales"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+                    android:id="@+id/textViewWebsredes"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/rounded_corners_azul"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_horizontal"
+                    android:layout_margin="20dp" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalScrollView3" >
+                    <LinearLayout
+                      android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:weightSum="1"
+                      android:background="@color/bgcolor">
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff">
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imabtnMTC"
+                                android:src="@drawable/mtc"
+                                android:theme="@style/ImaButton"
+                                android:background="#ffffff" />
+                            <TextView
+                                android:id="@+id/TextViewMTC"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:textColor="#121111"
+                                android:gravity="center"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:text="MTC"
+                                android:layout_gravity="center_horizontal">
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff">
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imabtnMEM"
+                                android:src="@drawable/mem"
+                                android:theme="@style/ImaButton"
+                                android:background="#ffffff" />
+                            <TextView
+                                android:id="@+id/TextViewmen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:textColor="#121111"
+                                android:gravity="center"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:text="MINEN"
+                                android:layout_gravity="center_horizontal">
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff">
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imabtnfacebook"
+                                android:src="@drawable/facebook"
+                                android:theme="@style/ImaButton"
+                                android:background="#ffffff" />
+                            <TextView
+                                android:id="@+id/TextViewfacebook"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:textColor="#121111"
+                                android:gravity="center"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:text="Facebook"
+                                android:layout_gravity="center_horizontal">
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff">
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imabtntwitter"
+                                android:src="@drawable/twitter"
+                                android:theme="@style/ImaButton"
+                                android:background="#ffffff" />
+                            <TextView
+                                android:id="@+id/TextViewtwitter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:textColor="#121111"
+                                android:gravity="center"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:text="Twitter"
+                                android:layout_gravity="center_horizontal">
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff">
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imabtngmail"
+                                android:src="@drawable/gmail"
+                                android:theme="@style/ImaButton"
+                                android:background="#ffffff" />
+                            <TextView
+                                android:id="@+id/TextViewgmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:textColor="#121111"
+                                android:gravity="center"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:text="Gmail"
+                                android:layout_gravity="center_horizontal">
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

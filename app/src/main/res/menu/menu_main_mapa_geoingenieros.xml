@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jdcasas.appciviltopia.MapaIngenieros">
+    <item
+        android:id="@+id/MenuOpcion1"
+        android:title="Normal" />
+    <item
+        android:id="@+id/MenuOpcion2"
+        android:title="Satélite" />
+    <item
+        android:id="@+id/MenuOpcion3"
+        android:title="Terreno" />
+    <item
+        android:id="@+id/MenuOpcion4"
+        android:title="Híbrido" />
+</menu>

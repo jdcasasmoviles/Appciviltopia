@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="provincias_lima">
+        <item>Rimac</item>
+        <item>Distrito de Lima</item>
+        <item>Smp</item>
+        <item>Jesus Maria</item>
+		<item>Los Olivos</item>
+		<item>Molina</item>
+		<item>Comas</item>
+		<item>Ate</item>
+		<item>Independencia</item>
+    </string-array>
+</resources>

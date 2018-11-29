@@ -1,0 +1,43 @@
+<resources>
+    <string name="google_maps_key">AIzaSyAgP0twZQUEM40rUL1u2mz_jEGC9fqJeo0</string>
+    <!-- Strings titulos activitys -->
+    <string name="app_name">Civiltopia</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_acerca">Acerca</string>
+    <string name="title_activity_geo_ingenieros_">GeoIngenieros</string>
+    <string name="title_activity_geo_receptores_">GeoReceptores</string>
+    <string name="title_activity_ingenieros">Ingenieros</string>
+    <string name="title_activity_lista_distritos">Distritos</string>
+    <string name="title_activity_receptores">Receptores</string>
+    <!-- Strings -->
+    <string name="action_settings">Settings</string>
+    <!-- Strings related to login -->
+    <string name="prompt_usuario">Usuario</string>
+    <string name="prompt_password">Password </string>
+    <string name="prompt_cip">Codigo C.I.P.</string>
+    <string name="prompt_costo">Costo (S/.)</string>
+    <string name="prompt_proyecto">Proyecto</string>
+    <string name="prompt_nombrecompleto">Nombres y apellidos</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <!-- Strings mensaje email -->
+    <string name="mail">jdcasasmoviles@gmail.com</string>
+    <string name="subject">AppCiviltopia</string>
+    <string name="envio">Este correo es enviado atraves de AppCiviltopia</string>
+
+    <string name="Provincia">Provincia</string>
+     <string name="buildAppCiviltopia">
+        "Civiltopia 1.0\nBuild Abril 4,2018"
+    </string>
+     <string name="large_text">
+        "El manual de usuario de la aplicacion esta disponible en pdf.\n\nEn el siguiente link : \n"
+        "https://drive.google.com/open?id=1TeL1SwjOgbSM9q-1yLnQJTPUesZuXnPE\n"
+    </string>
+    <string name="HechoPor">Jdcasasmoviles\n\nCopyright (C) 2018 \nReservados todos los derechos.</string>
+    <string name="title_activity_mapa_receptores">MapaReceptores</string>
+    <string name="title_activity_mapa_ingenieros">MapaIngenieros</string>
+    <string name="title_activity_mapa_receptores_cerca_ti_ingenieros">Mapa</string>
+    <string name="title_activity_usuario_ingeniero">Civiltopia</string>
+    <string name="cambiar_password">Cambiar Password</string>
+    <string name="title_activity_departamentos">Departamentos</string>
+    <string name="title_activity_receptores_departamentos">Civiltopia</string>
+</resources>

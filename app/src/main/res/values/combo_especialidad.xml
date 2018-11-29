@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="combo_especialidad">
+        <item>ING. CIVIL</item>
+        <item>ING. CAMINOS CANALES Y PUERTO</item>
+        <item>NO ESPECIFICADO</item>
+        <item>ING. HIDRAULICO</item>
+		<item>ING. CIVIL AMBIENTAL</item>
+        <item>ING. AGUA</item>
+        <item>CONSTRUCCION</item>
+        <item>ESTRUCTURAS</item>
+        <item>TRANSPORTE</item>
+        <item>GEOTECNIA</item>
+        <item>OTROS</item>
+    </string-array>
+</resources>

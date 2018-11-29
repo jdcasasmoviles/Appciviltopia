@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/bgcolor"
+    tools:context="com.jdcasas.appciviltopia.AgregarProyectos">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView5" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agregar Proyectos"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:id="@+id/tw_agregarproyectos"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_corners_azul"
+                android:layout_marginBottom="15dp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Receptor"
+                        android:textSize="@dimen/formularioletra"
+                        android:id="@+id/tw_receptor"
+                        android:background="@drawable/rounded_corners_textview"
+                        android:layout_marginBottom="@dimen/espacio_textview" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Departamento"
+                        android:textSize="@dimen/formularioletra"
+                        android:id="@+id/tw_departamento"
+                        android:background="@drawable/rounded_corners_textview"
+                        android:layout_marginBottom="@dimen/espacio_textview"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Provincia"
+                        android:textSize="@dimen/formularioletra"
+                        android:id="@+id/tw_provincia"
+                        android:background="@drawable/rounded_corners_textview"
+                        android:layout_marginBottom="@dimen/espacio_textview"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Distrito"
+                        android:background="@drawable/rounded_corners_textview"
+                        android:id="@+id/tw_distrito"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Sector"
+                        android:id="@+id/tw_sector"
+                        android:background="@drawable/rounded_corners_textview"
+                        android:layout_marginTop="15dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Unidad ejecutora"
+                        android:id="@+id/tw_ejecutora"
+                        android:background="@drawable/rounded_corners_textview"
+                        android:layout_marginTop="15dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Modalidad ejecutora"
+                        android:id="@+id/tw_modalidadejecutora"
+                        android:background="@drawable/rounded_corners_textview"
+                        android:layout_marginTop="15dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_receptor"
+                        android:text=""
+                        android:textSize="@dimen/formularioletra"
+                        android:layout_marginLeft="10dp"
+                        android:editable="false" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_departamento"
+                        android:text=""
+                        android:textSize="@dimen/formularioletra"
+                        android:layout_marginLeft="10dp"
+                        android:editable="false" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_provincia"
+                        android:text=""
+                        android:textSize="@dimen/formularioletra"
+                        android:layout_marginLeft="10dp"
+                        android:editable="false" />
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sp_distrito"
+                        android:spinnerMode="dropdown"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="@dimen/spinnerletra"
+                        />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sp_sector"
+                        android:spinnerMode="dropdown"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="@dimen/spinnerletra"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sp_unidadejecutora"
+                        android:spinnerMode="dropdown"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="@dimen/spinnerletra"
+                        android:layout_marginTop="10dp"
+                        />
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sp_modalidadejecutora"
+                        android:spinnerMode="dropdown"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="@dimen/spinnerletra"
+                        android:layout_marginTop="10dp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_margin="5dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Proyecto"
+                        android:textSize="@dimen/formularioletra"
+                        android:id="@+id/tw_proyecto"
+                        android:background="@drawable/rounded_corners_textview"
+                        android:layout_marginBottom="@dimen/espacio_textview"    />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3">
+                        <EditText
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:id="@+id/et_proyecto"
+						android:hint="@string/prompt_proyecto"
+						android:imeActionId="@+id/login"
+						 android:imeActionLabel="@string/action_sign_in_short"
+                        android:imeOptions="actionUnspecified"
+						android:inputType="textMultiLine"
+						android:lines="8"
+						android:maxLines="10"
+						android:minLines="6"
+						android:scrollbars="vertical" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_margin="5dp">
+                <EditText
+                    android:id="@+id/et_costo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_costo"
+                    android:inputType="numberDecimal"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:maxLines="1"
+                    android:layout_weight="0.6"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Agregar"
+                    android:id="@+id/bt_agregar"
+                    android:textSize="@dimen/formularioletra"
+                    android:theme="@style/MyButton"
+                    android:layout_marginRight="4dip"
+                    android:layout_weight="0.3"
+                    android:layout_margin="5dp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reset"
+                    android:textSize="@dimen/formularioletra"
+                    android:id="@+id/ButtonReset"
+                    android:layout_marginRight="4dip"
+                    android:theme="@style/MyButton"
+                    android:layout_weight="0.3"
+                    android:layout_margin="5dp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Volver"
+                    android:textSize="@dimen/formularioletra"
+                    android:id="@+id/ButtonVolver"
+                    android:layout_marginRight="4dip"
+                    android:theme="@style/MyButton"
+                    android:layout_weight="0.3"
+                    android:layout_margin="5dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

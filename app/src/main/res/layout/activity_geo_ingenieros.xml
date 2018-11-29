@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/bgcolor"
+    tools:context="com.jdcasas.appciviltopia.GeoIngenieros">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:id="@+id/textViewGeoIngenieros"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_corners_azul"
+                android:layout_marginBottom="15dp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Provincia"
+                        android:id="@+id/textViewProvincia"
+                        android:layout_marginBottom="30dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Distrito"
+                        android:id="@+id/textViewDistrito"
+                        android:layout_marginBottom="30dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Especialidad"
+                        android:id="@+id/textViewEspecialidad"
+                        android:layout_marginBottom="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25">
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerProvinciaGeoIngenieros"
+                        android:spinnerMode="dropdown"
+                        android:layout_marginBottom="15dp" />
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerDistritoGeoIngenieros"
+                        android:spinnerMode="dropdown"
+                        android:layout_marginBottom="15dp" />
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerEspecialidadGeoIngenieros"
+                        android:spinnerMode="dropdown"
+                        android:layout_marginBottom="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.20">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/BuscarDistritosGeoIngenieros"
+                        android:src="@drawable/siguiente"
+                        android:layout_marginLeft="10dp"
+                        android:background="?android:selectableItemBackground"
+                        android:onClick="botoncargarSpinnerDistritosGeoIngenieros"
+                        android:layout_marginBottom="40dp" />
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ButtonBuscarGeoIngenieros"
+                        android:src="@drawable/buscar"
+                        android:layout_marginLeft="10dp"
+                        android:background="?android:selectableItemBackground"
+                        android:onClick="botonBuscarGeoIngenieros" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.20">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageButton10"
+                        android:src="@android:drawable/ic_menu_revert"
+                        android:layout_marginLeft="10dp"
+                        android:background="?android:selectableItemBackground"
+                        android:onClick="botonVolverGeoIngenieros"
+                        android:layout_marginBottom="40dp" />
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/botonResetGeoIngenieros"
+                        android:src="@drawable/reset"
+                        android:layout_marginLeft="10dp"
+                        android:background="?android:selectableItemBackground"
+                        android:onClick="botonResetGeoIngenieros" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=""
+                android:id="@+id/twResultadosGeoIngenieros"
+                android:textColor="@color/colorTextoResultados"
+                android:layout_marginTop="10dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView10"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView10" >
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalScrollView6"
+                    android:layout_alignBottom="@+id/scrollView10"
+                    android:layout_toRightOf="@+id/scrollView10" >
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/scrollView10"
+                        android:layout_marginTop="25dp"
+                        android:id="@+id/tablaGeoIngenieros">
+                    </TableLayout>
+                </HorizontalScrollView>
+            </ScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

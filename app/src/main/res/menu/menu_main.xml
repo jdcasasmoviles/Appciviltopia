@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jdcasas.appciviltopia.MainActivity">
+        
+    <item
+        android:id="@+id/Acerca_de"
+        android:orderInCategory="100"
+        android:title="Acerca de"
+        android:icon="@android:drawable/ic_menu_help"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/Salir"
+        android:orderInCategory="100"
+        android:title="Salir"
+        android:icon="@android:drawable/ic_menu_revert"
+        app:showAsAction="always" />
+</menu>
